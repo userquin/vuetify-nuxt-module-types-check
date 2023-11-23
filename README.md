@@ -13,9 +13,11 @@ This repo checks the behavior for:
 
 Running `pnpm nuxt prepare && vue-tsc --noEmit` works, there are no errors.
 
-You can switch between Node10 and Bundler, update the `nuxt.config.ts` file switching `experimental.typescriptBundlerResolution` and running `pnpm nuxt prepare`, maybe you also need to restart the window (VS Code) or Vue Language Server or reopen the IDE/Project (IntelliJ/WebStorm).
+You can switch between `Node10` and `Bundler`, update the `nuxt.config.ts` file switching `experimental.typescriptBundlerResolution` and running `pnpm nuxt prepare`, maybe you also need to restart the window (VS Code) or Vue Language Server or reopen the IDE/Project (IntelliJ/WebStorm).
 
-**NOTE**: after initial installation `pnpm install`, IntelliJ/WebStorm can take some time to index the project dependencies.
+**NOTE**:
+- after initial installation `pnpm install`, IntelliJ/WebStorm can take some time to index the project dependencies
+- you can find the `tsconfig.json` config file in the `.nuxt` folder after initial installation or running `pnpm nuxt prepare`
 
 **NOTES For Nuxt**: 
 - importing the module from the `modules` folder seems to work (also using `~/modules/vuetify`), if we remove it, then the module hook is not resolved properly!
