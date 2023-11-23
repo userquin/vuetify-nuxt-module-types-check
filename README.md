@@ -12,8 +12,9 @@ To switch between Node10 and Bundler, update the `nuxt.config.ts` file, `experim
 
 **NOTE**: after initial installation `pnpm install`, IntelliJ/WebStorm can take some time to index the project dependencies.
 
-**NOTE For Nuxt**: 
-Importing the module from the `layer-module` folder seems to work (also using `~/layer-modules/vuetify`), if we omit it then module hook is not resolved properly!.
+**NOTES For Nuxt**: 
+- importing the module from the `modules` folder seems to work (also using `~/modules/vuetify`), if we remove it, then the module hook is not resolved properly!
+- we should review `module-builder`, on IntelliJ UE/Beta 3, `Ctrl + Click` on `unocss:config` module hook goes to the declaration, the UnoCSS Nuxt package using `unbuild` to build the module.
 
 https://streamable.com/5qdx8g
 
@@ -55,7 +56,7 @@ https://streamable.com/5qdx8g
   - ✔️ `Ctrl + Mouse Click` on the named import goes to the definition in both cases
 
 
-### IntelliJ Ultimate Edition and Beat 3 (EAP)
+### IntelliJ Ultimate Edition and Beta 3 (EAP)
 
 - Configuration (nuxt.config.ts): 
   - ❌ `vuetify` resolves to `module:nuxt/schema.NuxtConfig.vuetify?: Partial<O> | Record<string, any>`
