@@ -1,6 +1,8 @@
 <script setup lang="ts">
-const xxx = useNuxtApp().$vuetify
-console.log(xxx)
+const vuetify = useNuxtApp().$vuetify
+console.log(vuetify)
+useNuxtApp().hook('vuetify:configuration', ({ isDev }) => {})
+useNuxtApp().hook('vuetify:before-create', ({ vuetifyOptions }) => {})
 </script>
 <template>
   <v-app>
