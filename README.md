@@ -28,7 +28,7 @@ https://streamable.com/5qdx8g
 ### VS Code
 
 - Configuration (nuxt.config.ts):
-  - ✔️ `vuetify` resolves to `module:nuxt/schema.NuxtConfig.vuetify?: Partial<O> | Record<string, any>`
+  - ✔️ `vuetify` resolves to `NuxtConfig['vuetify']?: Partial<ModuleOptions> | undefined`
   - ✔️ types are ok with `Ctrl + Mouse Over`
   - ✔️ `Ctrl + Mouse Click` on any entry goes to the definition
 - Custom configuration (vuetify.config.ts):
