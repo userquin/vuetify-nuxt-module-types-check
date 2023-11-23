@@ -1,14 +1,19 @@
 # Checking Vuetify Nuxt Module Augmentation
 
-It seems there are some issues with the Vuetify Nuxt module augmentation when using VS Code or JetBrains IDE. Depending on the module resolution configured, the IDE will either not recognize the Vuetify module augmentation or it will not recognize the Vuetify module augmentation types.
+This repo is using `pnpm` as package manager with a local tgz of `vuetify-nuxt-module` via `file:` protocol: the tgz has been created from the following PR https://github.com/userquin/vuetify-nuxt-module/pull/156.
 
-Node16 will not be used, the way Nuxt [module-builder](https://github.com/nuxt/module-builder) generates the types seems to break the IDEs, here we are going to report only Node and Bundler problems.
+It seems there are some issues with the Vuetify Nuxt module augmentation when using VS Code or JetBrains IDE.
 
-This repo will check the behavior for configuration and custom configuration, module hooks, runtime hooks and Vuetify augmentation ($vuetify inside Vue SFC, and script setup and Nuxt Plugins via `useNuxtApp()`) and virtual modules.
+This repo checks the behavior for:
+- Nuxt configuration
+- custom Vuetify configuration file
+- module hooks
+- runtime hooks and Vuetify augmentation (`$vuetify` inside Vue SFC, and script setup and Nuxt Plugins via `useNuxtApp()`)
+- virtual modules.
 
 Running `pnpm nuxt prepare && vue.tsc --noEmit` works, there are no errors.
 
-To switch between Node10 and Bundler, update the `nuxt.config.ts` file, `experimental.typescriptBundlerResolution` and run `pnpm nuxt prepare` and restart the window (VS Code) or Vue Language Server or reopen the IDE/Project (IntelliJ/WebStorm).
+You can switch between Node10 and Bundler, update the `nuxt.config.ts` file chaining `experimental.typescriptBundlerResolution` and running `pnpm nuxt prepare`, maybe you also need to restart the window (VS Code) or Vue Language Server or reopen the IDE/Project (IntelliJ/WebStorm).
 
 **NOTE**: after initial installation `pnpm install`, IntelliJ/WebStorm can take some time to index the project dependencies.
 
