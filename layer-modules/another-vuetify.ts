@@ -10,8 +10,5 @@ export default defineNuxtModule({
                 },
             })
         )
-        nuxt.hook('unocss:config', config => {
-
-        })
     }
 })

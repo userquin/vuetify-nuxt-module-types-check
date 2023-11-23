@@ -1,7 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ['@unocss/nuxt', 'vuetify-nuxt-module'],
+  modules: [
+    '@unocss/nuxt',
+    '~/layer-modules/another-vuetify',
+    '~/modules/vuetify',
+    'vuetify-nuxt-module'
+  ],
   vuetify: {
     moduleOptions: {
       includeTransformAssetsUrls: {
@@ -11,12 +16,17 @@ export default defineNuxtConfig({
           'append-avatar',
         ],
       },
+      ssrClientHints: {
+        reloadOnFirstRequest: false,
+        prefersColorScheme: false,
+        prefersColorSchemeOptions: {
+          useBrowserThemeOnly: false,
+        },
+        viewportSize: true,
+      },
     },
-    // vuetifyOptions: {
-    //   optionsPath: 'vuetify.config.ts',
-    // }
   },
   experimental: {
-    typescriptBundlerResolution: false,
+    typescriptBundlerResolution: true,
   }
 })
