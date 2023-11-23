@@ -98,7 +98,7 @@ https://streamable.com/5qdx8g
   - ❌ `Ctrl + Mouse Over` on the named import doesn't show the type in both cases (works when using `Bundler`)
   - ❌ `Ctrl + Mouse Click` on the named import doesn't go to the definition in both cases
 
-#### Screenshots IntelliJ Ultimate Edition
+#### IntelliJ Ultimate Edition Screenshots
 
 ![img.png](img.png)
 
