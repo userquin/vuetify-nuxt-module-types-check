@@ -1,0 +1,23 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@iconify-json/mdi": "^1.1.55",
+    "@nuxt/devtools": "latest",
+    "@unocss/nuxt": "^0.57.7",
+    "nuxt": "^3.8.2",
+    "typescript": "^5.3.2",
+    "vue": "^3.3.8",
+    "vue-router": "^4.2.5",
+    "vue-tsc": "^1.8.22",
+    "vuetify-nuxt-module": "file:vuetify-nuxt-module-0.6.7.tgz"
+  }
+}
