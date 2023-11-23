@@ -95,5 +95,11 @@ https://streamable.com/5qdx8g
   - ❌ cannot resolve static import, doesn't work in Vue SFC script setup (it is in read)
   - ❌ cannot resolve static import, doesn't work in TypeScrypt (it is not in read)
   - ❌ `Ctrl + Mouse Click` on `virtual:vuetify-ssr-client-hints-configuration` doesn't go to the definition in both cases
-  - ❌ `Ctrl + Mouse Over` on the named import doesn't show the type in both cases
+  - ❌ `Ctrl + Mouse Over` on the named import doesn't show the type in both cases (works when using `Bundler`)
   - ❌ `Ctrl + Mouse Click` on the named import doesn't go to the definition in both cases
+
+#### Screenshots IntelliJ Ultimate Edition
+
+![img.png](img.png)
+
+![img_1.png](img_1.png)
