@@ -38,7 +38,7 @@ Running `pnpm nuxt prepare && vue.tsc --noEmit` works, there are no errors.
   - ✔️ `Ctrl + Mouse Over` on any `useNuxtApp().hook` parameter types shows definition
   - ❌ `Ctrl + Mouse Click` on `useNuxtApp().hook` hook name doesn't go to the definition
   - ❌ `Ctrl + Mouse Click` on any `useNuxtApp().hook` parameter types doesn't go to the definition
-Module Hooks (modules/vuetify.ts):
+- Module Hooks (modules/vuetify.ts):
   - ❌ `nuxt.hook('` doesn't show any Vuetify module hooks: `Vue: Argument of type "vuetify:registerModule" is not assignable to parameter of type HookKeys<NuxtHooks>`
   - ❌ `vuetify:registerModule` hook resolves parameter types to any: `Vue: Parameter registerModule implicitly has an any type, but a better type may be inferred from usage.`
   - ❌ `Ctrl + Mouse Over` on any `useNuxtApp().hook` parameter types shows definition
