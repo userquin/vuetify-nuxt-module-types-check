@@ -11,7 +11,7 @@ This repo checks the behavior for:
 - runtime hooks and Vuetify augmentation (`$vuetify` inside Vue SFC, and script setup and Nuxt Plugins via `useNuxtApp()`)
 - virtual modules.
 
-Running `pnpm nuxt prepare && vue.tsc --noEmit` works, there are no errors.
+Running `pnpm nuxt prepare && vue-tsc --noEmit` works, there are no errors.
 
 You can switch between Node10 and Bundler, update the `nuxt.config.ts` file chaining `experimental.typescriptBundlerResolution` and running `pnpm nuxt prepare`, maybe you also need to restart the window (VS Code) or Vue Language Server or reopen the IDE/Project (IntelliJ/WebStorm).
 
