@@ -1,6 +1,6 @@
 # Checking Vuetify Nuxt Module Augmentation
 
-This repo is using `pnpm` as package manager with a local tgz of `vuetify-nuxt-module` via `file:` protocol: the tgz has been created from the following PR https://github.com/userquin/vuetify-nuxt-module/pull/156.
+This repo is using `pnpm` as package manager, now using `vuetify-nuxt-module v0.7.0`: removed local tgz from the PR https://github.com/userquin/vuetify-nuxt-module/pull/156.
 
 It seems there are some issues with the Vuetify Nuxt module augmentation when using VS Code or JetBrains IDE.
 
