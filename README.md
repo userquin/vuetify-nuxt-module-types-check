@@ -13,7 +13,7 @@ This repo checks the behavior for:
 
 Running `pnpm nuxt prepare && vue-tsc --noEmit` works, there are no errors.
 
-You can switch between `Node10` and `Bundler`, update the `nuxt.config.ts` file switching `experimental.typescriptBundlerResolution` and running `pnpm nuxt prepare`, maybe you also need to restart the window (VS Code) or Vue Language Server or reopen the IDE/Project (IntelliJ/WebStorm).
+You can switch between `Node10` and `Bundler`, update the `nuxt.config.ts` file toggling `experimental.typescriptBundlerResolution` flag and running `pnpm nuxt prepare`, maybe you also need to restart the window (VS Code) or Vue Language Server or reopen the IDE/Project (IntelliJ/WebStorm).
 
 **NOTE**:
 - after initial installation `pnpm install`, IntelliJ/WebStorm can take some time to index the project dependencies
@@ -56,8 +56,8 @@ https://streamable.com/5qdx8g
   - ❌ `Ctrl + Mouse Click` on `nuxt.hook` hook name doesn't go to the definition
   - ❌ `Ctrl + Mouse Click` on any `nuxt.hook` parameter types doesn't go to the definition
 - Virtual Modules (app.vue & plugins/vuetify.ts)
-  - ✔️ resolves static import in Vue SFC script setup
-  - ✔️ resolves static import in TypeScrypt
+  - ✔️ resolves static and dynamic imports in Vue SFC script setup
+  - ✔️ resolves static and dynamic imports in TypeScrypt
   - ✔️ `Ctrl + Mouse Click` on `virtual:vuetify-ssr-client-hints-configuration` goes to the definition in both cases
   - ✔️ `Ctrl + Mouse Over` on the named import shows the type in both cases
   - ✔️ `Ctrl + Mouse Click` on the named import goes to the definition in both cases
@@ -94,8 +94,8 @@ https://streamable.com/5qdx8g
   - ❌ `Ctrl + Mouse Click` on `nuxt.hook` hook name doesn't go to the definition
   - ❌ `Ctrl + Mouse Click` on any `nuxt.hook` parameter types doesn't go to the definition
 - Virtual Modules (app.vue & plugins/vuetify.ts)
-  - ❌ cannot resolve static import, doesn't work in Vue SFC script setup (it is in read)
-  - ❌ cannot resolve static import, doesn't work in TypeScrypt (it is not in read)
+  - ❌ cannot resolve static and dynamic imports, doesn't work in Vue SFC script setup (it is in red)
+  - ❌ cannot resolve static and dynamic imports, doesn't work in TypeScrypt (it is not in red)
   - ❌ `Ctrl + Mouse Click` on `virtual:vuetify-ssr-client-hints-configuration` doesn't go to the definition in both cases
   - ❌ `Ctrl + Mouse Over` on the named import doesn't show the type in both cases (works when using `Bundler`)
   - ❌ `Ctrl + Mouse Click` on the named import doesn't go to the definition in both cases
